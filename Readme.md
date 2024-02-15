@@ -1,3 +1,3 @@
-# Template HTML CSS JS
+# Site vitrine CIME (Collectif pour l’Innovation dans la Mobilité et L’Energie)
 
-Description page for the project
+Site de présentation du cercle de réflexion et d’action CIME.
