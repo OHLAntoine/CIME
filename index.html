@@ -25,43 +25,68 @@
     <meta name="keywords" content="mobilité, économique, apolitique, indépendant, entreprise, financier, réglementaire">
 </head>
 <body>
-    <header class="container sticky-top navbar_header loaded">
-        <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
-            <div class="container-fluid">
-                <a class="navbar-brand navbar_text" href="./index.html">CIME</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-                    <i class="bi bi-list menu_toggle"></i>
+    <header class="container navbar_header loaded">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid ps-0 pe-0">
+                <a class="navbar-brand" href="/"><span class="text-primary">CI</span><span class="text-danger">ME</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcime" aria-controls="navbarcime" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end offcanvas_menu" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-                    <div class="offcanvas-header">
-                    <h5 class="offcanvas-title navbar_text" id="offcanvasNavbar2Label">CIME</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link navbar_text" aria-current="page" href="#project">Le Cercle CIME et son projet</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link navbar_text" href="#tribunes">Tribunes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link navbar_text" href="#events">Evénements</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link navbar_text" href="#supports">Ils nous soutiennent</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link navbar_text" href="#joinus">Nous rejoindre</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarcime">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">Le Cercle CIME et son projet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tribunes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Evénements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ils nous soutiennent</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nous rejoindre</a>
+                        </li>
+                    </ul>
                 </div>
-                </div>
-            </nav>
+            </div>
+        </nav>
     </header>
 
     <main>
+        <section class="img_presentation">
+            <div class="container title_container">
+                <h1 class="title fw-bold">Pour un renouveau de la mobilité et des transports en France</h1>
+            </div>
+        </section>
+
+        <section id="project">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row align-items-center g-5 py-5">
+                    <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-2">Qu’est ce que le Cercle Sigma ?</h2>
+                    <p class="lead">
+                        Sigma est un cercle de réflexion et d’action créé en février 2024. 
+                        Sa création part du constat que si la Loi d’Orientation des Mobilités posait en 2019 les jalons d’un leadership 
+                        français fort, cette ambition est aujourd’hui décorrélée de l’évolution du marché des mobilités et est en recherche 
+                        d’un nouveau souffle économique et régulatoire.
+                        <br><br>
+                        Sigma est un cercle apolitique, non religieux et indépendant. Nous visons à faire de la France une nation 
+                        avant-gardiste dans des secteurs d’excellence comme les régies de transports, la mobilité partagée ou 
+                        l'utilisation de la donnée pour renforcer son niveau de service et de compétitivité.
+                        <br><br>
+                        Dirigé par des experts du monde des transports et de la mobilité et composé de figures d’autorité de cet 
+                        écosystème, Sigma a pour objectif d’étudier, d’évaluer et de faire des recommandations tout en créant le pont 
+                        entre des mondes qui ont des difficultés à communiquer ensemble harmonieusement : l’entreprise, le financier et 
+                        le réglementaire.
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Rejoignez nous !</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -71,13 +96,13 @@
                 <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                 CIME
                 </a>
-                <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+                <span class="mb-3 mb-md-0 text-body-secondary">© Tous droits réservés.</span>
             </div>
         
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                <li class="ms-3 fs-5"><a class="text-body-secondary" href="#"><i class="bi bi-twitter-x"></i></a></li>
+                <li class="ms-3 fs-5"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+                <li class="ms-3 fs-5"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
             </ul>
         </div>
     </footer>

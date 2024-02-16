@@ -27,9 +27,38 @@ body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    background-color: var(--white-);
 }
 
 :root {
     --white- : rgba(248, 248, 248, 1);
 }
 
+/* Header */
+
+nav {
+    background-color: var(--white-);
+}
+
+/* Title section */
+
+.img_presentation {
+    background-image: url("../images/meeting-picture.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 93vh;
+    width: 100vw;
+}
+
+.title_container {
+    padding-top: 75vh;
+}
+
+.title {
+    text-align: center;
+    background-color: rgba(248, 248, 248, 0.6);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
