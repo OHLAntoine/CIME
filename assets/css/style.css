@@ -34,10 +34,19 @@ body {
     --white- : rgba(248, 248, 248, 1);
 }
 
+.border_section {
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, white, blue, white, red, white) 1;
+}
+
 /* Header */
 
 nav {
     background-color: var(--white-);
+}
+
+.logo {
+    height: 2.5rem;
 }
 
 /* Title section */
