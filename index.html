@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tab Icon -->
-    <link rel="icon" href="">
+    <link rel="icon" href="./assets/images/eiffel-tower.png">
     <!-- BOOTSTRAP + ICONS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -50,7 +50,7 @@
                             <a class="nav-link" href="#sponsors">Ils nous soutiennent</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nous rejoindre</a>
+                            <a class="nav-link" href="#joinus">Nous rejoindre</a>
                         </li>
                     </ul>
                 </div>
@@ -135,19 +135,19 @@
                                 <div class="carousel-item active">
                                     <img src="./assets/images/meeting-picture.avif" class="d-block w-100 rounded" alt="placeholder">
                                     <div class="carousel-caption d-md-block text-body-emphasis">
-                                        <h5 class="">Les corporates & les startups</h5>
+                                        <h5 class="events-img_title">Les corporates & les startups</h5>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img src="./assets/images/meeting-picture.avif" class="d-block w-100 rounded" alt="Placeholder">
                                     <div class="carousel-caption d-md-block text-body-emphasis">
-                                        <h5 class="">Les administrations et le gouvernement</h5>
+                                        <h5 class="events-img_title">Les administrations et le gouvernement</h5>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img src="./assets/images/meeting-picture.avif" class="d-block w-100 rounded" alt="Placeholder">
                                     <div class="carousel-caption d-md-block text-body-emphasis">
-                                        <h5 class="">Les médias spécialisés</h5>
+                                        <h5 class="events-img_title">Les médias spécialisés</h5>
                                     </div>
                                 </div>
                             </div>
@@ -178,6 +178,80 @@
             </div>
         </section>
 
+        <section id="joinus" class="border_section">
+            <div class="container col-xxl-8 px-4 py-5">
+                <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-5">Envie de nous rejoindre ?</h2>
+                <div class="d-flex justify-content-center">
+                <div class="d-flex align-items-center justify-content-center col-lg-8 col-sm-12">
+                    <form onsubmit="sendEmail(); reset(); return false;" class="">
+                        <fieldset class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label for="nom" class="form-label">Nom :</label>
+                                <input type="text" class="form-control" name="nom" id="nom" placeholder="Votre nom" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="prenom" class="form-label">Prénom :</label>
+                                <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Votre prénom" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label">Adresse email :</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Votre email" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="tel" class="form-label">Numéro de téléphone :</label>
+                                <input type="tel" class="form-control" name="tel" id="tel" placeholder="Votre numéro de téléphone (Optionnel)">
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message :</label>
+                                <textarea type="text" class="form-control" name="message" id="message" placeholder="Votre message" rows="3" required></textarea>
+                            </div>
+                            <div class="col-12 mt-4 d-flex align-items-center justify-content-center">
+                                <button type="submit" class="btn btn-lg btn-primary mb-3">Nous rejoindre</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals soumission de formulaire -->
+        <div id="SuccessModal" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Votre email a été envoyé avec succès !</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal_message">
+                            Merci à vous,
+                            <br>
+                            Nous vous recontacterons dès que possible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="FailedModal" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Erreur dans l'envoi du mail...</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal_message">
+                            Merci de retenter plus tard ou d'écrire directement à :
+                            <br>
+                            <a href="mailto:antoine.ohl@gmail.com">antoine.ohl@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer class="container">
@@ -197,7 +271,7 @@
         </div>
     </footer>
 
-    <!-- Script Bootstrap -->
+    <!-- Script EmailJS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- Scripts JS -->
     <script src="./assets/scripts/index.js"></script>
