@@ -89,6 +89,13 @@ header {
     width: 100vw;
 }
 
+@media (max-width: 575px) {
+    .img_presentation {
+        background-attachment: local;
+        background-position: center;
+    }
+}
+
 .title_container {
     padding-top: 75vh;
 }
