@@ -109,6 +109,10 @@ header {
 
 /* Events section */
 
+.meeting_list{
+    list-style: circle;
+}
+
 .events-img_title {
     background-color: var(--white_light_opactity-);
 }
