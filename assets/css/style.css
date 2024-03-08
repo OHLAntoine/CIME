@@ -31,12 +31,11 @@ body {
 }
 /* Colors */
 :root {
-    --white-: rgba(255, 255, 255, 1);
-    --white_light_opactity- : rgba(255, 255, 255, 0.6);
-    --dark_blue-: rgba(60, 74, 153, 1);
-    --middle_blue-: rgba(124, 134, 196, 1);
-    --light_blue-: rgba(231, 233, 244, 1);
-    --red-: rgba(180, 40, 45, 1);
+    --white-: rgba(248, 248, 248, 1);
+    --white_light_opactity- : rgba(248, 248, 248, 0.6);
+    --dark_blue-: rgba(18, 68, 139, 1);
+    --middle_blue-: rgba(187, 202, 234, 1);
+    --red-: rgba(180, 31, 36, 1);
 }
 /* Border */
 .border_section {
@@ -52,29 +51,22 @@ body {
     background-color: var(--dark_blue-);
     color: var(--white-);
 }
-.button_light_blue {
-    background-color: var(--light_blue-);
-}
-.button_light_blue:hover {
-    background-color: var(--middle_blue-);
-    color: var(--white-);
-}
-/* Text colors */
-.text_dark_blue {
-    color: var(--dark_blue-);
-}
-.text_red {
-    color: var(--red-);
-}
 
 /* Header */
 
 header {
-    background-color: var(--light_blue-);
+    background-color: var(--middle_blue-);
 }
 
 .logo {
     height: 3rem;
+    transform: scale(2);
+}
+
+@media (max-width: 575px) {
+    .container-fluid {
+        margin: 0 2rem;
+    }
 }
 
 /* Title section */
@@ -85,7 +77,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 93vh;
+    height: 92vh;
     width: 100vw;
 }
 
@@ -97,7 +89,7 @@ header {
 }
 
 .title_container {
-    padding-top: 75vh;
+    padding-top: 74vh;
 }
 
 .title {
@@ -105,6 +97,12 @@ header {
     background-color: var(--white_light_opactity-);
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+@media (max-width: 767px) {
+    .title_container {
+        padding-top: 67vh;
+    }
 }
 
 /* Events section */
@@ -131,4 +129,15 @@ header {
 
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* Footer */
+
+.footer_icon {
+    max-height: 3rem;
+    transform: scale(1.7);
+}
+
+.socials_links:hover {
+    color: var(--dark_blue-);
 }
