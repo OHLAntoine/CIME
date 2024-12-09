@@ -9,6 +9,7 @@ function sendEmail(){
         prenom: document.querySelector('#prenom').value,
         email: document.querySelector('#email').value,
         tel: document.querySelector('#tel').value,
+        subject: "Demande pour rejoindre le cercle CiME",
         message: document.querySelector('#message').value
     };
 
