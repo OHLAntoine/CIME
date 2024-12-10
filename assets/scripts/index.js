@@ -5,8 +5,8 @@ function sendEmail(){
     })();
 
     let params = {
-        nom: document.querySelector('#nom').value,
-        prenom: document.querySelector('#prenom').value,
+        firstname: document.querySelector('#nom').value,
+        lastname: document.querySelector('#prenom').value,
         email: document.querySelector('#email').value,
         tel: document.querySelector('#tel').value,
         subject: "Demande pour rejoindre le cercle CiME",
